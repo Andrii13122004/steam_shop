@@ -1,0 +1,421 @@
+/* Скидання стилів для всіх елементів */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+/* Стилізація тіла */
+body {
+ font-family: Arial, sans-serif;
+ background-color: #1f1f1f;
+ color: white;
+}
+/* Стилізація шапки */
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #2c2c2c;
+ padding: 10px 20px;
+}
+/* Стилізація логотипа */
+.logo {
+  font-size: 24px;
+   font-weight: bold;
+   color: white;
+  }
+  /* Стилізація меню навігації */
+  .nav-menu {
+   display: flex;
+   gap: 20px;
+  }
+  .nav-link {
+   color: white;
+   text-decoration: none;
+   font-size: 16px;
+   padding: 5px 10px;
+   transition: background-color 0.3s ease;
+  }
+  .nav-link:hover {
+   background-color: #444;
+   border-radius: 5px;
+  }
+/* Стилізація профілю користувача */
+.user-profile {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+.user-name {
+ font-size: 16px;
+ color: white;
+}
+.role-tag {
+ background-color: #3a87ff;
+ color: white;
+ padding: 2px 8px;
+ border-radius: 5px;
+ font-size: 12px;
+}
+.user-avatar {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ border: 2px solid white;
+}
+/* Стилі для банера */
+.banner {
+ height: 500px;
+ background: url('images/banner-image.jpg') no-repeat center center/cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+/* Ефект скла для тексту */
+.banner-text {
+ background: rgba(255, 255, 255, 0.2); /* Прозорий фон */
+ border-radius: 15px;
+ padding: 40px;
+ backdrop-filter: blur(10px); /* Ефект розмитого скла */
+ color: white;
+ text-align: center;
+}
+.banner-text h1 {
+ font-size: 48px;
+ margin-bottom: 10px;
+}
+.banner-text p {
+ font-size: 20px;
+ margin-top: 0;
+}
+
+.banner-text span {
+ color: #3a87ff;
+ font-weight: bold;
+}
+
+/* Стилі для секції "Новинки" */
+.products {
+ display: flex;
+ gap: 24px;
+ justify-content: center;
+ margin: 40px 0; 
+}
+
+.products-card{
+  width: 300px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.image-wrapper{
+  position: relative; /*контейнер для зображення*/
+}
+
+.prodcut-image{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gradient-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40%;
+  background: linear-gradient(transpert, rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+/*Стиль для тексту*/
+.product-info{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  z-index: 2;
+}
+
+.prodcut-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.prodcut-info p{
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.price{
+  font-size: 20px;
+  font-weight: bold;
+}
+ /*кнопка придбати*/
+.buy-button{
+  background-color: #3a87ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.buy-button:hover{
+  background-color: #2c5cb5;
+}
+.ganre-tag{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #3a87ff;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.product-name{
+  color: #3a87ff;
+  font-weight: bold;
+}
+
+.load-more{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.load-more-button{
+  background-color: #3a87ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.load-more-button:hover{
+  background-color: #285eac;
+}
+
+.footer{
+  background-color: #2c2c2c;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo a{
+  color: #3a87ff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-menu a{
+  text-decoration: none;
+  color: white;
+  margin: 0px 15px;
+  font-size: 16px;
+}
+
+.footer-menu a:hover{
+  text-decoration: underline;
+}
+
+.footer-form form{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-form input{
+  margin: 10px 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.footer-form button{
+  background-color: #3a87ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footer-form button:hover{
+  background-color: #285eac;
+}
+
+.footer-bottom{
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+}
+
+
+.main-banner{
+  background: url('images/banner-image.jpg') no-repeat center/cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.banner-text{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.team-section{
+  background-color: #e0f7fa;
+  padding: 40px 0;
+}
+
+.team-grid{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.team-member img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.team-member h3{
+  margin-top: 10px 0;
+  color: black;
+  font-size: 18px;
+}
+
+.team-member p{
+  color: black;
+}
+
+.value-section{
+  background-color: #f0f4f8;
+  padding: 40px 0;
+}
+
+.value-grid{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.value-card{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.value-icob{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.value-card h3{
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.value-card p{
+  color: black;
+}
+
+.value-section h2{
+  color: black;
+}
+
+.team-section h2{
+  color: black;
+}
+
+
+.buy-button-novelty{
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.buy-button-novelty:hover{
+  background-color: #ff0000;
+}
+
+.ganre-tag-novelty{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff6666;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  z-index: 1;
+}
+
+.price-sales{
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff6666;
+}
+
+.buy-button-sales{
+  background-color: #3a87ff;;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.buy-button-sales:hover{
+  background-color: #2c5cb5;
+}
